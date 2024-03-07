@@ -1,0 +1,1459 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  src: local("Montserrat Light"), local("Montserrat-Light"), url("/fonts/Montserrat-Light.woff2") format("woff2"), url("/fonts/Montserrat-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  src: local("Montserrat"), local("Montserrat-Regular"), url("/fonts/Montserrat-Regular.woff2") format("woff2"), url("/fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  src: local("Montserrat"), local("Montserrat-Regular"), url("/fonts/Montserrat-Medium.woff2") format("woff2"), url("/fonts/Montserrat-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("/fonts/Montserrat-Bold.woff2") format("woff2"), url("/fonts/Montserrat-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  src: local("Montserrat Black"), local("Montserrat-Black"), url("/fonts/Montserrat-Black.woff2") format("woff2"), url("/fonts/Montserrat-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lighthaus";
+  src: url("/fonts/Lighthaus.eot");
+  src: url("/fonts/Lighthaus.eot?#iefix") format("embedded-opentype"), url("/fonts/Lighthaus.woff2") format("woff2"), url("/fonts/Lighthaus.woff") format("woff"), url("/fonts/Lighthaus.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("/fonts/MontserratAlternates-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Snell Roundhand";
+  src: url("/fonts/snell-roundhand-900.otf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Snell Roundhand";
+  src: url("/fonts/snell-roundhand-700.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lighthaus";
+  src: url("/fonts/Lighthaus-400.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+/* --------------------------------- */
+.video-section__video {
+  width: 100%;
+  display: block;
+}
+
+.live {
+  margin: -2px 0 0;
+  position: relative;
+  background: #FFFFFF;
+  overflow: hidden;
+}
+.live__content {
+  padding: 161px 0 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+@media all and (max-width: 767px) {
+  .live__content {
+    padding: 9px 9px 0;
+    align-items: center;
+  }
+}
+.live__text-wrapper {
+  position: relative;
+  z-index: 3;
+}
+.live__text-wrapper::before {
+  content: url("/landings/ewok-plus-rent/content/live/shadow.webp");
+  position: absolute;
+  z-index: 2;
+  top: -27%;
+  left: -62%;
+}
+@media all and (max-width: 767px) {
+  .live__text-wrapper::before {
+    content: url("/landings/ewok-plus-rent/content/shadow.webp");
+    top: 83%;
+    left: -21%;
+  }
+}
+@media all and (max-width: 450px) {
+  .live__text-wrapper::before {
+    content: url("/landings/ewok-plus-rent/content/shadow-mob.webp");
+    top: 91%;
+    left: -5%;
+  }
+}
+.live__image-ewok-plus {
+  width: 100%;
+  height: 100%;
+}
+.live__image-ewok-plus img {
+  position: absolute;
+  z-index: 1;
+  object-fit: cover;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+
+}
+
+@media (max-width: 767px){
+    .live__image-ewok-plus img {
+        max-width: max-content;
+    }
+}
+
+
+
+
+
+
+@media all and (max-width: 767px) {
+  .live__image-ewok-plus img {
+    position: relative;
+    left: -60vw;
+    width: 180%;
+  }
+}
+.live__title {
+  font-family: "Snell Roundhand";
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(40px, 10vw, 52px);
+  line-height: 93%;
+  color: #000000;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+.live__title_large {
+  display: block;
+  margin: 20px 0 -40px;
+  font-family: "Lighthaus";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(40.7px, 12vw, 75px);
+  color: #51433F;
+  line-height: 120%;
+}
+.live__title_purple {
+  font-weight: 900;
+  font-size: clamp(50.6px, 11vw, 77px);
+  color: #7B3EFF;
+}
+.live__title_small {
+  display: block;
+  margin: 40px 0 0;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(15px, 3vw, 20px);
+  line-height: 170%;
+  color: #090808;
+}
+.live__text {
+  position: relative;
+  z-index: 2;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(15px, 2vw, 16px);
+  line-height: 170%;
+  text-align: center;
+  color: #000000;
+  margin: 40px 0 0;
+}
+@media all and (max-width: 450px) {
+  .live__text br {
+    display: none;
+  }
+}
+@media all and (max-width: 767px) {
+  .live__text {
+    margin: 25px 0 0;
+  }
+}
+.live__image-decorate {
+  position: relative;
+  z-index: 2;
+  display: block;
+  width: clamp(198px, 60vw, 370px);
+  margin: 40px 0 0;
+  left: 82px;
+}
+.live__image-decorate img {
+  width: 100%;
+}
+@media all and (max-width: 450px) {
+  .live__image-decorate {
+    transform: translateX(-18px);
+  }
+}
+
+.pleasure {
+  margin: -2px 0 0;
+  background-color: #F5F5F5;
+  position: relative;
+}
+.pleasure__content {
+  position: relative;
+  z-index: 2;
+  padding: 60px 0 92px;
+}
+@media all and (max-width: 767px) {
+  .pleasure__content {
+    padding: 16px 10px 0;
+  }
+}
+.pleasure__title {
+  font-family: "Snell Roundhand";
+  font-style: italic;
+  font-weight: 500;
+  line-height: 115%;
+  font-size: clamp(43px, 7vw, 74px);
+  color: #181818;
+}
+@media all and (max-width: 767px) {
+  .pleasure__title {
+    text-align: center;
+  }
+}
+@media all and (max-width: 450px) {
+  .pleasure__title {
+    text-align: left;
+  }
+}
+.pleasure__title_purple {
+  margin-left: 21%;
+  font-weight: 900;
+  color: #7B3EFF;
+}
+.pleasure__title_large {
+  font-family: "Lighthaus";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(36.6px, 7vw, 63px);
+  text-transform: uppercase;
+  color: #181818;
+}
+.pleasure__subtitle {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: clamp(16px, 2vw, 20px);
+  line-height: 170%;
+  color: #000000;
+  margin-top: 40px;
+}
+@media all and (max-width: 767px) {
+  .pleasure__subtitle br {
+    display: none;
+  }
+}
+.pleasure__description {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(15px, 2vw, 17px);
+  line-height: 170%;
+  color: #000000;
+  margin-top: 33px;
+}
+@media all and (max-width: 767px) {
+  .pleasure__description br {
+    display: none;
+  }
+}
+.pleasure__image {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media all and (max-width: 767px) {
+  .pleasure__image {
+    margin-top: 15px;
+    position: relative;
+    left: -50vw;
+    width: 170%;
+  }
+}
+
+.perfection {
+  margin: -2px 0 0;
+  position: relative;
+  background: #FFFFFF;
+  overflow: hidden;
+}
+.perfection__content {
+  padding: 121px 0 125px;
+}
+@media all and (max-width: 767px) {
+  .perfection__content {
+    padding: 34px 6px 0;
+  }
+}
+.perfection__text-wrapper {
+  position: relative;
+  z-index: 3;
+}
+.perfection__text-wrapper::before {
+  content: url("/landings/ewok-plus-rent/content/perfection/shadow.webp");
+  position: absolute;
+  z-index: 2;
+  top: -18%;
+  left: -38%;
+}
+@media all and (max-width: 767px) {
+  .perfection__text-wrapper::before {
+    content: url("/landings/ewok-plus-rent/content/shadow.webp");
+    top: 83%;
+    left: -5%;
+  }
+}
+@media all and (max-width: 450px) {
+  .perfection__text-wrapper::before {
+    content: url("/landings/ewok-plus-rent/content/shadow-mob.webp");
+    top: 91%;
+  }
+}
+.perfection__title {
+  position: relative;
+  z-index: 2;
+  font-family: "Lighthaus";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(38.5px, 12vw, 85px);
+  line-height: 100.69%;
+  color: #181818;
+}
+@media all and (max-width: 767px) {
+  .perfection__title {
+    text-align: center;
+  }
+}
+.perfection__title_purple {
+  font-family: "Snell Roundhand";
+  font-style: italic;
+  font-weight: 700;
+  font-size: clamp(49.4px, 14vw, 104px);
+  color: #7B3EFF;
+}
+.perfection__description {
+  position: relative;
+  z-index: 2;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(15px, 3vw, 20px);
+  line-height: 170%;
+  color: #181818;
+  margin: 47px 0 0;
+}
+@media all and (max-width: 767px) {
+  .perfection__description {
+    margin: 22px 0 0;
+  }
+}
+@media all and (max-width: 767px) {
+  .perfection__description br {
+    display: none;
+  }
+}
+.perfection__image-ewok-plus img {
+  position: absolute;
+  z-index: 1;
+  object-fit: cover;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 767px){
+    .perfection__image-ewok-plus img {
+        max-width: max-content;
+    }
+}
+
+
+@media all and (max-width: 767px) {
+  .perfection__image-ewok-plus img {
+    position: relative;
+    margin-top: 22px;
+    left: -60vw;
+    width: 180%;
+  }
+}
+
+.power {
+  margin: -1px 0 0;
+  position: relative;
+  background: #FFFFFF;
+  overflow: hidden;
+}
+.power__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 159px 0 152px;
+}
+@media all and (max-width: 767px) {
+  .power__content {
+    align-items: center;
+    padding: 22px 10px 0;
+  }
+}
+.power__title {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  font-family: "Snell Roundhand";
+  font-style: italic;
+  font-weight: 900;
+  font-size: clamp(86.6px, 13vw, 117.6px);
+  line-height: 96%;
+  color: #7B3EFF;
+}
+.power__title_large {
+  position: relative;
+  z-index: 3;
+  font-family: "Lighthaus";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(99px, 14vw, 134.5px);
+  color: #51433F;
+}
+.power__description {
+  position: relative;
+  z-index: 3;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(15px, 2vw, 20px);
+  line-height: 170%;
+  text-align: center;
+  color: #000000;
+  margin-top: 48px;
+}
+.power__image-ewok-plus img {
+  position: absolute;
+  z-index: 1;
+  object-fit: cover;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 767px){
+    .power__image-ewok-plus img {
+        max-width: max-content;
+    }
+}
+
+
+@media all and (max-width: 767px) {
+  .power__image-ewok-plus img {
+    position: relative;
+    margin-top: 22px;
+    left: -23vw;
+    width: 180%;
+  }
+}
+.power__text-wrapper {
+  position: relative;
+  z-index: 3;
+}
+.power__text-wrapper::before {
+  content: url("/landings/ewok-plus-rent/content/power/shadow.webp");
+  position: absolute;
+  z-index: 2;
+  top: -26%;
+  left: -56%;
+}
+@media all and (max-width: 767px) {
+  .power__text-wrapper::before {
+    content: url("/landings/ewok-plus-rent/content/shadow.webp");
+    top: 80%;
+    left: -70%;
+  }
+}
+@media all and (max-width: 450px) {
+  .power__text-wrapper::before {
+    content: url("/landings/ewok-plus-rent/content/shadow-mob.webp");
+    top: 91%;
+    left: -29%;
+  }
+}
+
+.effect {
+  margin: -2px 0 0;
+  position: relative;
+  background-color: #FFFFFF;
+}
+.effect__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 61px 0 264px;
+}
+@media all and (max-width: 767px) {
+  .effect__content {
+    align-items: center;
+    padding: 24px 11px 0;
+  }
+}
+.effect__title {
+  position: relative;
+  z-index: 3;
+  font-family: "Snell Roundhand";
+  font-style: italic;
+  font-weight: 700;
+  font-size: clamp(39px, 12.5vw, 92px);
+  line-height: 116%;
+  color: #7B3EFF;
+}
+.effect__title_large {
+  margin: 0 16% 0 0;
+  display: block;
+  font-family: "Lighthaus";
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #181818;
+}
+@media all and (max-width: 767px) {
+  .effect__title_large {
+    margin: 0;
+  }
+}
+.effect__title_black-bg {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(12.8px, 4.5vw, 30px);
+  line-height: 170%;
+  display: inline-block;
+  background: #181818;
+  padding: 10px 21px;
+  vertical-align: middle;
+  color: white;
+}
+@media all and (max-width: 767px) {
+  .effect__title_black-bg {
+    padding: 9px;
+  }
+}
+.effect__title p {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.effect__description {
+  position: relative;
+  z-index: 3;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(15px, 2vw, 20px);
+  line-height: 170%;
+  color: #000000;
+  margin: 45px 0 0 188px;
+}
+@media all and (max-width: 767px) {
+  .effect__description {
+    margin: 48px 0 0;
+  }
+}
+@media all and (max-width: 767px) {
+  .effect__description br {
+    display: none;
+  }
+}
+.effect__image-ewok-plus {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media all and (max-width: 767px) {
+  .effect__image-ewok-plus {
+    position: static;
+    margin: 5% 0 0;
+    width: 100%;
+  }
+}
+
+.cosiness {
+  position: relative;
+  margin: -2px 0 0;
+}
+.cosiness__swiper {
+  overflow: hidden;
+  width: 100%;
+}
+@media all and (max-width: 767px) {
+  .cosiness__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.cosiness__slide {
+  box-sizing: border-box;
+  height: clamp(12px, 46vw, 900px);
+  padding: 5% 10px;
+  position: relative;
+  color: #fff;
+}
+@media all and (max-width: 767px) {
+  .cosiness__slide {
+    padding: 4% 0 80%;
+    height: unset;
+  }
+}
+.cosiness__slide_2 {
+  align-items: flex-end;
+  color: #181818;
+}
+@media all and (max-width: 767px) {
+  .cosiness__slide_2 {
+    padding: 4% 0 75%;
+  }
+}
+.cosiness__slide_2 .cosiness__paragraph {
+  text-align: center;
+}
+.cosiness__slide_2 .cosiness__slide-desc {
+  align-items: flex-end;
+  justify-content: center;
+}
+@media all and (max-width: 767px) {
+  .cosiness__slide_2 .cosiness__slide-desc {
+    justify-content: start;
+    align-items: center;
+  }
+}
+.cosiness__slide-desc {
+  height: 100%;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+@media all and (max-width: 767px) {
+  .cosiness__slide-desc {
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+.cosiness__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Lighthaus";
+  font-size: clamp(12px, 5.9vw, 115px);
+  line-height: 1;
+}
+@media all and (max-width: 767px) {
+  .cosiness__title {
+    font-size: 18vw;
+  }
+}
+.cosiness__title_span {
+  font-family: "Snell Roundhand";
+  font-style: italic;
+  font-weight: 700;
+  font-size: clamp(12px, 4.4vw, 85px);
+  line-height: 1;
+}
+@media all and (max-width: 767px) {
+  .cosiness__title_span {
+    font-size: 16.5vw;
+  }
+}
+.cosiness__title_span_1 {
+  white-space: nowrap;
+  margin: 0 0 0 30%;
+}
+@media all and (max-width: 767px) {
+  .cosiness__title_span_1 {
+    margin: 0;
+  }
+}
+.cosiness__title_2 {
+  font-size: clamp(12px, 8.5vw, 163px);
+}
+@media all and (max-width: 767px) {
+  .cosiness__title_2 {
+    font-size: 18vw;
+  }
+}
+.cosiness__paragraph {
+  margin: 2% 2.5% 0 0;
+  font-size: clamp(12px, 1.2vw, 20px);
+  line-height: 1.5;
+}
+@media all and (max-width: 767px) {
+  .cosiness__paragraph {
+    margin: 4% 0 0;
+    font-size: 5vw;
+  }
+}
+.cosiness__img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+.cosiness .swiper-pagination {
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+@media all and (max-width: 767px) {
+  .cosiness .swiper-pagination {
+    display: none;
+  }
+}
+.cosiness .swiper-pagination-bullet {
+  width: 20px !important;
+  height: 20px !important;
+  background: #fff !important;
+  margin: 0 !important;
+  opacity: 1 !important;
+}
+.cosiness .swiper-pagination-bullet-active {
+  background: #E03638 !important;
+}
+
+.ewok-mat {
+  margin: -1px 0 0;
+  position: relative;
+}
+.ewok-mat__img {
+  width: 100%;
+}
+.ewok-mat__text-comtainer {
+  position: absolute;
+  width: clamp(10px, 21vw, 403px);
+  left: clamp(10px, 26vw, 499px);
+  top: clamp(10px, 29vw, 556px);
+  box-sizing: border-box;
+  padding: 1% 2%;
+  border-radius: clamp(12px, 1.61vw, 31px) clamp(12px, 1.61vw, 31px) 0 clamp(12px, 1.61vw, 31px);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(8px, 0.93vw, 18px);
+  line-height: 1.5;
+  color: #181818;
+}
+@media all and (max-width: 767px) {
+  .ewok-mat__text-comtainer {
+    position: static;
+    width: 100%;
+    border-radius: 0;
+    background: #7d685c;
+    padding: 7% 10px;
+    font-size: 5vw;
+    color: #fff;
+  }
+}
+.ewok-mat__link {
+  font-weight: 600;
+  text-decoration: underline;
+  color: inherit;
+}
+.ewok-mat__link:hover {
+  opacity: 0.8;
+}
+
+.massage-slider-second-slider {
+  padding: 1.5% 0;
+  margin: -1px 0 0;
+  background-color: #7B6F6F;
+}
+@media all and (max-width: 767px) {
+  .massage-slider-second-slider {
+    padding: 5% 0;
+  }
+}
+.massage-slider-second-slider .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+.massage-slider-second-slider__img {
+  width: 100%;
+}
+.modes {
+  margin: -1px 0 0;
+  background: #fff;
+  color: #181818;
+}
+.modes__container {
+  padding: 4% 10px 2.5%;
+}
+@media all and (max-width: 767px) {
+  .modes__container {
+    padding: 5% 10px;
+  }
+}
+.modes__title {
+  font-family: "Lighthaus";
+  font-size: clamp(18px, 3.7vw, 71px);
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  color: #181818;
+}
+@media all and (max-width: 767px) {
+  .modes__title {
+    margin: 0 0 5%;
+    font-size: 8vw;
+    white-space: normal;
+    text-align: left;
+  }
+}
+.modes__subtitle {
+  margin: 3.5% 0 7%;
+  width: 100%;
+  font-weight: 500;
+  font-size: clamp(14px, 1.4vw, 25px);
+  line-height: 1.4;
+  text-align: center;
+}
+@media all and (max-width: 767px) {
+  .modes__subtitle {
+    display: none;
+  }
+}
+.modes__first-swiper-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.modes__first-swiper-slide {
+  width: 19%;
+  height: unset;
+}
+@media all and (max-width: 767px) {
+  .modes__first-swiper-slide {
+    width: unset;
+    height: unset;
+  }
+}
+.modes__img-container {
+  position: relative;
+  z-index: 4;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 3px solid #fff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.modes__img-container::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+@media all and (max-width: 767px) {
+  .modes__img-container::before {
+    opacity: 0;
+  }
+}
+.modes__img-container_active::before {
+  opacity: 0;
+}
+.modes__img-container:hover .modes__img {
+  transform: scale(1.1);
+}
+.modes__img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+.modes__second-swiper {
+  margin: 0% 0 0%;
+}
+.modes__second-swiper-slide {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4% 0 4%;
+  cursor: default;
+  font-family: "Snell Roundhand";
+  font-style: italic;
+  font-weight: 700;
+  font-size: clamp(18px, 4.6vw, 94px);
+  line-height: 1;
+  color: #7B3EFF;
+  text-align: center;
+  white-space: nowrap;
+}
+@media all and (max-width: 767px) {
+  .modes__second-swiper-slide {
+    white-space: normal;
+    margin: 3% 0 0;
+    font-size: 12vw;
+  }
+}
+
+.programms {
+  background: #f5f5f5;
+  margin: -1px 0 0;
+}
+.programms__container {
+  padding: 3% 16px 5%;
+}
+@media all and (max-width: 767px) {
+  .programms__container {
+    padding: 1% 10px 1%;
+  }
+}
+.programms__title {
+  padding: 1% 16px;
+  background: #fff;
+  font-family: "Snell Roundhand";
+  font-style: italic;
+  font-weight: 700;
+  color: #7B3EFF;
+  font-size: clamp(12px, 2.4vw, 47px);
+  line-height: 1.7;
+  text-align: center;
+  white-space: nowrap;
+}
+@media all and (max-width: 767px) {
+  .programms__title {
+    padding: 1% 10px 1%;
+    background: transparent;
+    font-size: clamp(12px, 6.9vw, 32px);
+    white-space: normal;
+  }
+}
+.programms__swiper {
+  position: relative;
+}
+.programms__slide {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+@media all and (max-width: 767px) {
+  .programms__slide {
+    align-items: center;
+  }
+}
+.programms__heading {
+  width: 50%;
+  font-family: "Lighthaus";
+  font-size: clamp(18px, 4.8vw, 94px);
+  line-height: 1;
+  text-transform: uppercase;
+  color: #181818;
+}
+@media all and (max-width: 767px) {
+  .programms__heading {
+    margin: 7% 0 0;
+    width: 100%;
+    font-size: 13vw;
+    text-align: center;
+  }
+}
+.programms__heading_min {
+  font-size: clamp(18px, 4vw, 76px);
+}
+@media all and (max-width: 767px) {
+  .programms__heading_min {
+    font-size: 13vw;
+  }
+}
+.programms__subheading {
+  width: 40%;
+  margin: 4% 0 0;
+  font-size: clamp(12px, 1.2vw, 20px);
+  line-height: 1.7;
+  color: #181818;
+}
+@media all and (max-width: 767px) {
+  .programms__subheading {
+    width: 100%;
+    font-size: clamp(15px, 4vw, 20px);
+  }
+}
+.programms__subheading_2 {
+  width: 48%;
+}
+@media all and (max-width: 767px) {
+  .programms__subheading_2 {
+    width: 100%;
+  }
+}
+.programms__paragraph-container {
+  width: 33%;
+  margin: 4% 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+@media all and (max-width: 767px) {
+  .programms__paragraph-container {
+    width: 100%;
+  }
+}
+.programms__paragraph-container_2 {
+  width: 48%;
+}
+@media all and (max-width: 767px) {
+  .programms__paragraph-container_2 {
+    width: 100%;
+  }
+}
+.programms__paragraph {
+  font-size: clamp(12px, 1.2vw, 20px);
+  line-height: 1.5;
+  color: #181818;
+}
+@media all and (max-width: 767px) {
+  .programms__paragraph {
+    font-size: clamp(15px, 4vw, 20px);
+  }
+}
+.programms__img-container {
+  position: absolute;
+  top: 0%;
+  right: -1.5%;
+  width: clamp(100px, 32vw, 620px);
+}
+@media all and (max-width: 767px) {
+  .programms__img-container {
+    margin: 0% 0 0;
+    position: static;
+    width: 100%;
+  }
+}
+.programms__img {
+  width: 100%;
+}
+.programms__button-container {
+  position: absolute;
+  z-index: 3;
+  top: clamp(12px, 27vw, 518px);
+  right: 0%;
+  width: clamp(12px, 30.1vw, 579px);
+  display: flex;
+  justify-content: space-between;
+}
+@media all and (max-width: 767px) {
+  .programms__button-container {
+    top: 81vw;
+    width: 90vw;
+    left: 2.5vw;
+  }
+}
+.programms__button {
+  width: clamp(40px, 4vw, 70px);
+  height: clamp(40px, 4vw, 70px);
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+@media all and (max-width: 767px) {
+  .programms__button {
+    width: 10vw;
+    height: 10vw;
+  }
+}
+.programms__button:hover {
+  opacity: 0.5;
+}
+@media all and (max-width: 767px) {
+  .programms .programms__paragraph_span {
+    display: none;
+  }
+}
+
+.intro {
+  margin: -1px 0 0;
+  position: relative;
+}
+.intro__video {
+  width: 100%;
+}
+.intro__unmute-btn {
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  width: 100px;
+  height: 100px;
+  transition: opacity 0.3s ease;
+  opacity: 0.8;
+  background: no-repeat center/cover url("/landings/ewok-plus-rent/content/intro/unmute.webp");
+}
+@media all and (max-width: 767px) {
+  .intro__unmute-btn {
+    width: 30px;
+    height: 30px;
+  }
+}
+.intro__unmute-btn_unmute {
+  background: no-repeat center/cover url("/landings/ewok-plus-rent/content/intro/mute.webp");
+}
+.intro__unmute-btn:hover {
+  opacity: 0.5;
+}
+
+.airomassage {
+  position: relative;
+  margin: -1px 0 0;
+  background: #FBF8F8;
+}
+.airomassage__container {
+  height: clamp(12px, 46.8vw, 900px);
+  padding: 3% 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+@media all and (max-width: 767px) {
+  .airomassage__container {
+    height: unset;
+    align-items: center;
+    padding: 5% 10px;
+  }
+}
+.airomassage__title {
+  position: relative;
+  z-index: 2;
+  font-family: "Lighthaus";
+  font-size: clamp(12px, 4.3vw, 84px);
+  line-height: 1.1;
+  color: #000000;
+}
+@media all and (max-width: 767px) {
+  .airomassage__title {
+    font-size: 11.5vw;
+  }
+}
+.airomassage__title_snall {
+  display: block;
+  margin: 0 0 0 5%;
+  white-space: nowrap;
+  font-family: "Snell Roundhand";
+  font-style: italic;
+  font-weight: 700;
+  font-size: clamp(12px, 5.6vw, 109px);
+  line-height: 1.1;
+  color: #7B3EFF;
+}
+@media all and (max-width: 767px) {
+  .airomassage__title_snall {
+    margin: 0;
+    font-size: 16vw;
+  }
+}
+.airomassage__video {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+@media all and (max-width: 767px) {
+  .airomassage__video {
+    display: block;
+    margin: 5% 0 -1px;
+    position: static;
+  }
+}
+.airomassage__paragraph {
+  position: relative;
+  z-index: 2;
+  font-size: clamp(12px, 1.2vw, 20px);
+  line-height: 1.5;
+  color: #000000;
+}
+@media all and (max-width: 767px) {
+  .airomassage__paragraph {
+    font-size: 4vw;
+  }
+}
+.airomassage__paragraph_1 {
+  margin: 1% 0 0;
+  width: 39%;
+}
+@media all and (max-width: 767px) {
+  .airomassage__paragraph_1 {
+    margin: 5% 0 0;
+    width: 100%;
+  }
+}
+.airomassage__paragraph_2 {
+  margin: 22.5% 0 0;
+  width: 37%;
+}
+@media all and (max-width: 767px) {
+  .airomassage__paragraph_2 {
+    margin: 5% 0 0;
+    width: 100%;
+  }
+}
+
+.chopping {
+  position: relative;
+  margin: -1px 0 0;
+  background: #fff;
+}
+.chopping__container {
+  height: clamp(12px, 46.8vw, 900px);
+  padding: 3% 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+@media all and (max-width: 767px) {
+  .chopping__container {
+    height: unset;
+    padding: 5% 10px;
+  }
+}
+.chopping__title {
+  position: relative;
+  z-index: 2;
+  font-family: "Lighthaus";
+  font-size: clamp(12px, 4.3vw, 84px);
+  line-height: 1.1;
+  color: #000000;
+}
+@media all and (max-width: 767px) {
+  .chopping__title {
+    text-align: center;
+    font-size: 17vw;
+    line-height: 1;
+  }
+}
+.chopping__title_snall {
+  display: block;
+  margin: -2% 0 0 22%;
+  white-space: nowrap;
+  font-family: "Snell Roundhand";
+  font-style: italic;
+  font-weight: 700;
+  font-size: clamp(12px, 5.6vw, 109px);
+  line-height: 1.1;
+  color: #7B3EFF;
+}
+@media all and (max-width: 767px) {
+  .chopping__title_snall {
+    line-height: 1;
+    text-align: center;
+    margin: 0;
+    font-size: 23vw;
+  }
+}
+.chopping__video {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+@media all and (max-width: 767px) {
+  .chopping__video {
+    margin: 5% 0 0;
+    position: static;
+  }
+}
+.chopping__check {
+  width: 20px;
+  height: 20px;
+  margin: 0 20px 0 0;
+}
+.chopping__paragraph {
+  display: flex;
+  position: relative;
+  z-index: 2;
+  margin: 3% 0 0;
+  width: 30%;
+  font-size: clamp(12px, 1.2vw, 20px);
+  line-height: 1.5;
+  color: #000000;
+}
+@media all and (max-width: 767px) {
+  .chopping__paragraph {
+    margin: 5% 0 0;
+    width: 100%;
+    font-size: 4vw;
+  }
+}
+
+.massage-leg {
+  position: relative;
+  margin: -1px 0 0;
+  background: #FBF8F8;
+}
+.massage-leg__content {
+  height: clamp(12px, 46.8vw, 900px);
+  padding: 3% 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+@media all and (max-width: 767px) {
+  .massage-leg__content {
+    align-items: center;
+    height: unset;
+    padding: 5% 10px 0;
+  }
+}
+.massage-leg__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.massage-leg__title {
+  position: relative;
+  z-index: 2;
+  font-family: "Snell Roundhand";
+  text-align: center;
+  font-style: italic;
+  font-weight: 700;
+  font-size: clamp(43.5px, 5vw, 92px);
+  line-height: 1;
+  color: #7B3EFF;
+}
+@media all and (max-width: 767px) {
+  .massage-leg__title {
+    font-size: clamp(43.5px, 10vw, 92px);
+  }
+}
+.massage-leg__title_bigger {
+  font-size: clamp(49px, 5.6vw, 104px);
+}
+@media all and (max-width: 767px) {
+  .massage-leg__title_bigger {
+    font-size: clamp(49px, 10vw, 104px);
+  }
+}
+.massage-leg__title_black {
+  display: block;
+  margin: 5% 0 -17%;
+  font-family: "Lighthaus";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(44px, 5vw, 93px);
+  text-transform: uppercase;
+  color: #000000;
+}
+@media all and (max-width: 767px) {
+  .massage-leg__title_black {
+    font-size: clamp(44px, 10vw, 93px);
+  }
+}
+.massage-leg__description {
+  position: relative;
+  z-index: 2;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(16px, 1.2vw, 20px);
+  line-height: 170%;
+  text-align: center;
+  color: #000000;
+  margin: 20% 0 0 -15%;
+}
+@media all and (max-width: 767px) {
+  .massage-leg__description {
+    margin: 10px 0 0;
+    font-size: clamp(16px, 3vw, 20px);
+  }
+}
+.massage-leg__video {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+@media all and (max-width: 767px) {
+  .massage-leg__video {
+    margin: 5% 0 0;
+    position: static;
+  }
+}
+
+.landing-form-21__img {
+  overflow: visible !important;
+}

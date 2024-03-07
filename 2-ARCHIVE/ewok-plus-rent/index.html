@@ -1,0 +1,423 @@
+<!-- <div class="fake-breadcrumbs container-box">
+    <ul class="fake-breadcrumbs__list" itemtype="http://schema.org/BreadcrumbList" itemscope="">
+        <li class="fake-breadcrumbs__element" itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+            <a class="fake-breadcrumbs__link" href="/" itemprop="item">
+                <span itemprop="name">Главная</span>
+                <meta itemprop="position" content="1">
+            </a>
+        </li>
+        <li class="fake-breadcrumbs__element">
+            <span class="breadcrumbs__separator">&gt;</span>
+        </li>
+        <li class="fake-breadcrumbs__element" itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+            <a class="fake-breadcrumbs__link" href="/rent-gym" itemprop="item">
+                <span itemprop="name">Аренда тренажёров Yamaguchi</span>
+                <meta itemprop="position" content="2">
+            </a>
+        </li>
+        <li class="fake-breadcrumbs__element">
+            <span class="breadcrumbs__separator">&gt;</span>
+        </li>
+        <li class="fake-breadcrumbs__element" itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+            <a class="fake-breadcrumbs__link" href="/rent-gym/catalog" itemprop="item">
+                <span itemprop="name">Каталог аренды</span>
+                <meta itemprop="position" content="3">
+            </a>
+        </li>
+        <li class="fake-breadcrumbs__element">
+            <span class="breadcrumbs__separator">&gt;</span>
+        </li>
+        <li class="fake-breadcrumbs__element" itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+            <a class="fake-breadcrumbs__link" href="#" itemprop="item">
+                <span itemprop="name"><?= $product->name ?>
+                </span>
+                <meta itemprop="position" content="4">
+            </a>
+        </li>
+    </ul>
+</div> -->
+
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>[Аренда] Массажное кресло Yamaguchi Ewok Plus</title>
+        <link rel="stylesheet" type="text/css" href="/landings/ewok-plus-rent/libs/swiper/swiper-bundle.min.css">
+        <link rel="stylesheet" type="text/css" href="/landings/ewok-plus-rent/styles/styles.css" />
+    </head>
+    <body>
+        <section class="intro">
+            <video style="display: block;" class="intro__video video-on-load" loop="loop" muted="true" playsinline
+                data-video="/landings/ewok-plus-rent/content/intro/intro.mp4"
+                data-video-mob="/landings/ewok-plus-rent/content/intro/intro.mp4">
+            </video>
+            <button type="button" class="intro__unmute-btn"></button>
+        </section>
+        <!-- ------------------------------------ -->
+
+        <section class="live">
+            <div class="live__content container-box">
+                <div class="live__text-wrapper">
+                    <h2 class="live__title">
+                        Настало время! <br>
+                        <span class="live__title_large">Распробуйте</span> <br>
+                        <span class="live__title_purple">жизнь</span> <br>
+                        <span class="live__title_small">вместе с&nbsp;Yamaguchi Ewok Plus</span>
+                    </h2>
+                    <p class="live__text">
+                        Новое поколение интерьерных кресел Yamaguchi <br>
+                        превращает любое пространство в&nbsp;абсолютную зону комфорта.
+                    </p>
+                    <p class="live__text">
+                        Эксклюзивные японские технологии массажа <br>
+                        и&nbsp;дополнительные функциональные возможности кресла <br> 
+                        обеспечат по-настоящему незабываемый отдых вне <br> 
+                        зависимости от&nbsp;времени и&nbsp;места.
+                    </p>
+                    <picture class="live__image-decorate">
+                        <img src="/landings/ewok-plus-rent/content/live/decore.webp" alt="decore">
+                    </picture>
+                </div>
+            </div>
+            <picture class="live__image-ewok-plus">
+                <img src="/landings/ewok-plus-rent/content/live/main.webp?2" alt="ewok plus">
+            </picture>
+        </section>
+
+        <section class="video-section">
+            <video class="video-section__video video-on-load" loop="loop" muted="muted" preload playsinline autoplay
+                data-video="/landings/ewok-plus-rent/content/second-video.mp4"
+                data-video-mob="/landings/ewok-plus-rent/content/second-video-m.mp4?1">
+            </video>
+        </section>
+
+        <section class="pleasure">
+            <div class="pleasure__content container-box">
+                <h2 class="pleasure__title">
+                    Получайте <br>
+                    <span class="pleasure__title_purple">максимум</span> <br>
+                    <span class="pleasure__title_large">УДОВОЛЬСТВИЯ</span> <br>
+                </h2>
+                <h3 class="pleasure__subtitle">
+                    Новое кресло оснащено всем, <br>
+                    что делает массаж еще приятнее.
+                </h3>
+                <p class="pleasure__description">
+                    Благодаря специальному <br>
+                    массажному механизму L-формы <br> 
+                    Yamaguchi Ewok Plus целиком <br> 
+                    прорабатывает все тело: <br> 
+                    эффективно разминает шею, <br> 
+                    спину, поясницу, а&nbsp;также область <br> 
+                    ягодиц.
+                </p>
+                <p class="pleasure__description">
+                    Движущиеся ролики из&nbsp;мягкого <br> 
+                    силикона создают особое <br> 
+                    наслаждение в&nbsp;каждой точке <br> 
+                    прикосновения.
+                </p>
+            </div>
+            <video class="pleasure__image video-on-load" loop="loop" muted="muted" playsinline
+                data-video="/landings/ewok-plus-rent/content/pleasure/back.mp4?1"
+                data-video-mob="/landings/ewok-plus-rent/content/pleasure/back.mp4?1">
+            </video>
+        </section>
+
+        <section class="perfection">
+            <div class="perfection__content container-box">
+                <div class="perfection__text-wrapper">
+                    <h2 class="perfection__title">
+                        БЛАГОРОДНОЕ <br>
+                        <span  class="perfection__title_purple">совершенство</span>
+                    </h2>
+                    <p  class="perfection__description">
+                        Yamaguchi Ewok Plus впечатляет <br>современным дизайном и&nbsp;изысканностью <br>каждой детали.
+                    </p>
+                    <p class="perfection__description">
+                        Корпус выполнен в&nbsp;белом глянцевом <br>цвете, а&nbsp;внутренний материал&nbsp;&mdash; из&nbsp;экокожи <br>темного оттенка с&nbsp;декоративной прострочкой, <br>которая привлекает внимание <br>и&nbsp;расставляет акценты.
+                    </p>
+                    <p class="perfection__description">
+                        Невероятная эргономика позволяет <br>гармонично вписаться креслу в&nbsp;любой <br>интерьер и&nbsp;совершенно <br>по-новому взглянуть на&nbsp;полноценный <br>массаж у&nbsp;вас дома или в&nbsp;офисе.
+                    </p>
+                </div>
+            </div>
+            <picture class="perfection__image-ewok-plus">
+                <img src="/landings/ewok-plus-rent/content/perfection/bg.webp" alt="ewok plus">
+            </picture>
+        </section>
+        <!-- ------------------------------------ -->
+        <section class="programms">
+            <h2 class="programms__title">4&nbsp;интеллектуальные автоматические программы массажа</h2>
+            <div class="programms__container container-box">
+
+                <div class="programms__swiper">
+                    <div class="programms__wrapper swiper-wrapper">
+
+                        <div class="programms__slide swiper-slide">
+                            <div class="programms__img-container">
+                                <img src="/landings/ewok-plus-rent/content/yamaguchi-ewok/programms/img1.webp" alt="картинка" class="programms__img">
+                            </div>
+                            <h3 class="programms__heading">ЯПОНСКИЙ</h3>
+                            <p class="programms__subheading">Массаж всех частей тела (шея, плечи, спина, поясница и&nbsp;ягодицы). 
+                                Основная техника массажа&nbsp;&mdash; интенсивный разминающий массаж с&nbsp;функцией 
+                                захватывания мышц (70%), постукивание (20%), чоппинг (10%).<br><br>
+                                Легкий воздушно-компрессионный массаж икр и&nbsp;бедер. Тонизирующий режим массажа 
+                                рекомендован для восстановления всех групп мышц.
+                            </p>
+                        </div>
+
+                        <div class="programms__slide swiper-slide">
+                            <div class="programms__img-container">
+                                <img src="/landings/ewok-plus-rent/content/yamaguchi-ewok/programms/img2.webp" alt="картинка" class="programms__img">
+                            </div>
+                            <h3 class="programms__heading programms__heading_min">АНТИСТРЕСС</h3>
+                            <p class="programms__subheading programms__subheading_2">Массаж всех частей тела (шея, плечи, спина, поясница и&nbsp;ягодицы) 
+                                с&nbsp;уникальной технологией Swing Therapy (интенсивный асинхронный аэромассаж 
+                                в&nbsp;сочетании с&nbsp;деликатным вытяжением всего тела).<br><br>
+                                Основные техники массажа: разминание (60%), роликовый (20%), постукивание (20%).
+                                Идеально подходит для релаксации после рабочего дня и&nbsp;перед&nbsp;сном
+                            </p>
+                        </div>
+
+                        <div class="programms__slide swiper-slide">
+                            <div class="programms__img-container">
+                                <img src="/landings/ewok-plus-rent/content/yamaguchi-ewok/programms/img3.webp" alt="картинка" class="programms__img">
+                            </div>
+                            <h3 class="programms__heading">СПИНА</h3>
+                            <p class="programms__subheading">Массаж области плеч, шеи и&nbsp;спины помогает облегчить боль в&nbsp;спине и&nbsp;шеи.<br><br>
+                                Основные техники массажа: Разминание (50%), постукивание (30%), чоппинг (20%), деликатный аэромассаж в&nbsp;икрах и&nbsp;бедрах.
+                            </p>
+                        </div>
+
+                        <div class="programms__slide swiper-slide">
+                            <div class="programms__img-container">
+                                <img src="/landings/ewok-plus-rent/content/yamaguchi-ewok/programms/img4.webp" alt="картинка" class="programms__img">
+                            </div>
+                            <h3 class="programms__heading programms__heading_min">Ягодицы<br>и бедра</h3>
+                            <p class="programms__subheading programms__subheading_2">Антицеллюлитный массаж бедер и&nbsp;ягодиц подходит для снятия 
+                                застойных явлений и&nbsp;профилактики мужских, женских заболеваний.<br><br>
+                                Комбинация массажных техник из&nbsp;постукивания, разминания, чоппинга в&nbsp;области ягодиц и&nbsp;бедер (80%), 
+                                поясница (10%), разминающая массажная техника в&nbsp;области шеи и&nbsp;спины (10%). <br><br>
+                                Точечная техника вытяжения в&nbsp;виде роликового массажа вдоль позвоночника. Деликатный воздушно-компрессионный 
+                                массаж в&nbsp;икрах и&nbsp;пояснице.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="programms__button-container">
+                        <img src="/landings/ewok-plus-rent/content/yamaguchi-ewok/programms/prev-btn.webp" alt="кнопка" class="programms__button_prev programms__button">
+                        <img src="/landings/ewok-plus-rent/content/yamaguchi-ewok/programms/next-btn.webp" alt="кнопка" class="programms__button_next programms__button">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- ------------------------------------ -->
+        <section class="modes">
+            <div class="modes__container container-box">
+                <h2 class="modes__title">5&nbsp;ручных режимов&nbsp;массажа</h2>
+                <h3 class="modes__subtitle">Выбирайте технику массажа и зону воздействия индивидуально, согласно Вашим предпочтениям.</h3>
+
+                <div class="modes__first-swiper">
+                    <div class="modes__first-swiper-wrapper swiper-wrapper">
+
+                        <div class="modes__first-swiper-slide swiper-slide">
+                            <div id="1" class="modes__img-container modes__img-container_0 modes__img-container_active"><img src="/landings/ewok-plus-rent/content/yamaguchi-ewok/modes/img1.webp" alt="массаж" class="modes__img"></div>
+                        </div>
+                        <div class="modes__first-swiper-slide swiper-slide">
+                            <div id="2" class="modes__img-container modes__img-container_1"><img src="/landings/ewok-plus-rent/content/yamaguchi-ewok/modes/img2.webp" alt="массаж" class="modes__img"></div>
+                        </div>
+                        <div class="modes__first-swiper-slide swiper-slide">
+                            <div id="3" class="modes__img-container modes__img-container_2"><img src="/landings/ewok-plus-rent/content/yamaguchi-ewok/modes/img3.webp" alt="массаж" class="modes__img"></div>
+                        </div>
+                        <div class="modes__first-swiper-slide swiper-slide">
+                            <div id="4" class="modes__img-container modes__img-container_3"><img src="/landings/ewok-plus-rent/content/yamaguchi-ewok/modes/img4.webp" alt="массаж" class="modes__img"></div>
+                        </div>
+                        <div class="modes__first-swiper-slide swiper-slide">
+                            <div id="5" class="modes__img-container modes__img-container_4"><img src="/landings/ewok-plus-rent/content/yamaguchi-ewok/modes/img5.webp" alt="массаж" class="modes__img"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="modes__second-swiper">
+                    <div class="modes__second-swiper-wrapper swiper-wrapper">
+                        <p class="modes__second-swiper-slide swiper-slide">Разминание</p>
+                        <p class="modes__second-swiper-slide swiper-slide">Постукивание</p>
+                        <p class="modes__second-swiper-slide swiper-slide">Разминание&nbsp;+ постукивание</p>
+                        <p class="modes__second-swiper-slide swiper-slide">Техника ребром&nbsp;ладони</p>
+                        <p class="modes__second-swiper-slide swiper-slide">Роликовый</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- ------------------------------------ -->
+        <section class="massage-slider-second-slider">
+            <div class="massage-slider-second-slider__wrapper swiper-wrapper">
+            
+                <img src="/landings/ewok-plus-rent/content/yamaguchi-ewok/massage-slider/slide-1.webp" alt="массаж" class="massage-slider-second-slider__img swiper-slide">
+                <img src="/landings/ewok-plus-rent/content/yamaguchi-ewok/massage-slider/slide-2.webp" alt="массаж" class="massage-slider-second-slider__img swiper-slide">
+                <img src="/landings/ewok-plus-rent/content/yamaguchi-ewok/massage-slider/slide-3.webp" alt="массаж" class="massage-slider-second-slider__img swiper-slide">
+                <img src="/landings/ewok-plus-rent/content/yamaguchi-ewok/massage-slider/slide-4.webp" alt="массаж" class="massage-slider-second-slider__img swiper-slide">
+                <img src="/landings/ewok-plus-rent/content/yamaguchi-ewok/massage-slider/slide-5.webp" alt="массаж" class="massage-slider-second-slider__img swiper-slide">
+                <img src="/landings/ewok-plus-rent/content/yamaguchi-ewok/massage-slider/slide-6.webp" alt="массаж" class="massage-slider-second-slider__img swiper-slide">
+                
+            </div>
+        </section>
+        <!-- ------------------------------------ -->
+        <section class="power">
+            <div class="power__content container-box">
+                <div class="power__text-wrapper">
+                    <h2 class="power__title">
+                        Место <br>
+                        <span class="power__title_large">СИЛЫ</span>
+                    </h2>
+                    <p class="power__description">
+                        С&nbsp;помощью дополнительного <br>
+                        массажного блока в&nbsp;области ног, <br> 
+                        наличию запрограммированных <br> 
+                        режимов и&nbsp;регулируемого угла <br> 
+                        наклона Yamaguchi Ewok Plus <br>
+                        легко превращается в&nbsp;SPA-капсулу <br> 
+                        здоровья с&nbsp;воздушно-компрессионным <br> 
+                        массажем икр и&nbsp;общим <br> 
+                        восстановлением всего тела. 
+                    </p>
+                </div>
+                
+            </div>
+            <picture class="power__image-ewok-plus">
+                <img src="/landings/ewok-plus-rent/content/power/bg.webp" alt="ewok plus">
+            </picture>
+        </section>
+
+        <section class="effect">
+            <div class="effect__content container-box">
+                <div>
+                    <h2 class="effect__title">Захватывающий <br>
+                        <p>
+                            <span  class="effect__title_large">эффект</span>
+                            <!-- <span  class="effect__title_black-bg">Master Shiatsu</span> -->
+                        </p>
+
+                    </h2>
+                    <p class="effect__description">
+                        В&nbsp;любом автоматическом режиме Вы&nbsp;будете <br> 
+                        наслаждаться незабываемым массажем <br> 
+                        благодаря инновационному механизму <br>
+                        с&nbsp;функцией захватывания мышц.
+                    </p>
+                    <p class="effect__description">
+                        Ритмичное надавливание на&nbsp;триггерные <br> 
+                        точки создает ощущение профессионального <br> 
+                        ручного массажа, мгновенно устраняя <br>
+                        болезненный синдром и&nbsp;зажатость мышц.
+                    </p>
+                </div>
+            </div>
+            <video class="effect__image-ewok-plus video-on-load" loop="loop" muted="muted" playsinline
+                data-video="/landings/ewok-plus-rent/content/effect/neck.mp4?1"
+                data-video-mob="/landings/ewok-plus-rent/content/effect/neck-m.mp4?1">
+            </video>
+        </section>
+        <!-- ------------------------------------ -->
+        <section class="airomassage">
+            <div class="airomassage__container container-box">
+                <h2 class="airomassage__title">АЭРОМАССАЖ <span class="airomassage__title_snall">и вытяжение</span></h2>
+                <video class="airomassage__video video-on-load" class="video-section__video video-on-load" loop="loop" muted="muted" playsinline
+                    data-video="/landings/ewok-plus-rent/content/airomassage/airomassage.mp4?2"
+                    data-video-mob="/landings/ewok-plus-rent/content/airomassage/airomassage-m.mp4?2">
+                </video>
+                <p class="airomassage__paragraph airomassage__paragraph_1">
+                    Уникальная технология Swing Therapy способна погрузить Вас в&nbsp;атмосферу 
+                    максимального расслабления и спокойствия.
+                </p>
+                <p class="airomassage__paragraph airomassage__paragraph_2">
+                    Бережная растяжка в&nbsp;сочетании 
+                    с интенсивным аэромассажем активизирует обменные процессы и&nbsp;улучшает 
+                    работу внутренних органов.
+                </p>
+            </div>
+        </section>
+        <!-- ------------------------------------ -->
+        <section class="chopping">
+            <div class="chopping__container container-box">
+                <h2 class="chopping__title">ЧОППИНГ- <span class="chopping__title_snall">массаж</span></h2>
+                <video class="chopping__video video-on-load" loop="loop" muted="muted" playsinline
+                    data-video="/landings/ewok-plus-rent/content/chopping/chopping.mp4"
+                    data-video-mob="/landings/ewok-plus-rent/content/chopping/chopping-m.mp4?1">
+                </video>
+                <p class="chopping__paragraph">Восстанавливающая техника Чоппинг-массажа 
+                    помогает убрать мышечное напряжение, снять спазм и&nbsp;быстро взбодриться.
+                </p>
+
+                <!-- <p class="chopping__paragraph">
+                    <img src="/landings/ewok-plus-rent/content/chopping/check.png" alt="галка" class="chopping__check">
+                    спадает мышечное<br>напряжение
+                </p> -->
+
+                <!-- <p class="chopping__paragraph">
+                    <img src="/landings/ewok-plus-rent/content/chopping/check.png" alt="галка" class="chopping__check">
+                    мгновенно бодрит
+                </p> -->
+            </div>
+        </section>
+        <!-- ------------------------------------ -->
+        <section class="massage-leg">
+            <div class="massage-leg__content container-box">
+                <div class="massage-leg__text-wrapper">
+                <h2 class="massage-leg__title">
+                    Тонизирующий <br>
+                    <span class="massage-leg__title_black">Массаж</span> <br>
+                    <span  class="massage-leg__title_bigger">ног</span>
+                </h2>
+                <p class="massage-leg__description">
+                    Акупунктурный массаж икр <br>с&nbsp;воздушно-компрессионным <br>воздействием различной частоты для <br>избавления от&nbsp;отечности <br>и&nbsp;накопленной за&nbsp;день <br>усталости в&nbsp;ногах.
+                </p>
+                </div>
+
+                <video class="massage-leg__video video-on-load" loop="loop" muted="muted" playsinline
+                    data-video="/landings/ewok-plus-rent/content/massage-leg/leg.mp4"
+                    data-video-mob="/landings/ewok-plus-rent/content/massage-leg/leg-m.mp4">
+                </video>
+            </div>
+        </section>
+        <!-- ------------------------------------ -->
+        <section class="cosiness">
+            <div class="cosiness__swiper">
+                <div class="cosiness__wrapper swiper-wrapper">
+                    <div class="cosiness__slide swiper-slide">
+                        <picture class="cosiness__img">
+                            <source srcset="/landings/ewok-plus-rent/content/cosiness-bottom/slide-1-mob.webp" media="(max-width: 767px)">
+                            <img src="/landings/ewok-plus-rent/content/cosiness-bottom/slide-1-1.webp" alt="кресло">
+                        </picture>
+                        <div class="cosiness__slide-desc container-box">
+                            <h2 class="cosiness__title">ЗАРЯЖАЙ<span class="cosiness__title_span cosiness__title_span_1">и заряжайся</span></h2>
+                            <p class="cosiness__paragraph">
+                                При необходимости дополнительный USB-разъем <br>служит для зарядки Ваших мобильных устройств.               
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cosiness__slide cosiness__slide_2 swiper-slide">
+                        <picture class="cosiness__img">
+                            <source srcset="/landings/ewok-plus-rent/content/cosiness-bottom/slide-2-mob.webp" media="(max-width: 767px)">
+                            <img src="/landings/ewok-plus-rent/content/cosiness-bottom/slide-2-2.webp" alt="кресло">
+                        </picture>
+                        <div class="cosiness__slide-desc container-box">
+                            <h2 class="cosiness__title cosiness__title_2"><span class="cosiness__title_span">Включите</span>ЗВУК</h2>
+                            <p class="cosiness__paragraph">
+                                Получайте максимум <br>комфорта с&nbsp;возможностью <br>прослушивания любимых <br>мелодий через встроенные <br>динамики кресла с&nbsp;помощью <br>беспроводной системы <br>Bluetooth.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <script type="text/javascript" src="/landings/ewok-plus-rent/libs/swiper/swiper-bundle.min.js"></script>
+        <script type="text/javascript" src="/landings/ewok-plus-rent/js/main.js"></script>
+    </body>
+</html>
